@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #343541;
+}
+
+@supports (-webkit-touch-callout: none) {
+  #chatcontainer,
+  #container {
+    height: -webkit-fill-available !important;
+  }
+}
+
+#container {
+  height: 100vh;
+  background-color: #343541;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+#chatcontainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.header {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #343541;
+  color: white;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 64px;
+  text-align: center;
+  margin: 0;
+}
+
+.header p {
+  font-size: 0.75em;
+  margin: 0;
+  font-style: italic;
+}
+
+#chat {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+#chat a {
+  color: #818f7b;
+}
+
+.chat-bubble-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chat-bubble {
+  padding: 2em 1em;
+  max-width: 80%;
+  width: 75%;
+}
+
+.chat-bubble > * {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.jamie-bubble {
+  background-color: #343541;
+  color: #ececf1;
+}
+
+.cat-bubble {
+  align-self: flex-start;
+  color: #d1d5db;
+  background-color: #444654;
+}
+
+#input-area {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background-color: #343541;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#input-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+#form {
+  width: 60%;
+}
+
+#input-area input {
+  width: calc(100% - 2em);
+  background-color: #40414F;
+  border: none;
+  color: #ececf1;
+  font-size: 1em;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+#input-area i {
+  color: #ececf1;
+  margin: 0.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.credits {
+  font-size: 0.7em;
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+  padding: 0px 0.5em;
+  margin: 0.3em;
+}
+
+.credits a {
+  color: #818f7b;
+}
+
+label > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#catselector {
+  margin: 10px 0;
+}

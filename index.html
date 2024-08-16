@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+
+  <title>cat simulator</title>
+  <meta name="description" content="cat simulator">
+</head>
+
+<body>
+  <div id="container">
+    <div class="header">
+      <h1>cat simulator</h1>
+      <p class="credits">
+        a totally real, high-intelligence cat AI!
+      </p>
+    </div>
+    <div id="catselector">
+      <input type="radio" id="jadebtn" name="catgirl" value="jade" checked>
+      <label for="jade"><img src="jade.png"></label>
+      <input type="radio" id="leabtn" name="catgirl" value="lea">
+      <label for="lea"><img src="lea.png"></label>
+    </div>
+    <div id="chatcontainer">
+      <div id="chat"></div>
+      <div id="input-area">
+        <div id="input-container">
+          <form id="form">
+            <input type="text" placeholder="Type your message here" id="user-input" />
+          </form>
+          <a><i class="fas fa-paper-plane"></i></a>
+        </div>
+        <p class="credits">
+          This site was created by <a href="https://itsjamie.dev" target="_blank">Jamie Murphy</a> | Inspired by <a
+            href="https://catgpt.wvd.io" target="_blank">CatGPT</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
